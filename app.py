@@ -5,17 +5,16 @@ app = Flask(__name__)
 
 @app.route('/', methods=['POST', 'GET'])
 def index ():
-    name = request.args.get('name', '')
     #return "Hello " + name
-    return render_template('home.html', name=name)
+    return render_template('home.html')
 
 @app.route('/robot/go/<distance>')
-def view(distance=None):
+def go(distance=None):
 	return render_template('robot.html', distance=distance)
    
 
 @app.route('/robot/square/<distance>')
-def view(distance=None):
+def square(distance=None):
     return render_template('robotgo.html', distance=distance)
 
 
