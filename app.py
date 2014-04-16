@@ -10,7 +10,7 @@ def index ():
     return render_template('home.html', name=name)
 
 @app.route('/robot')
-@app.route('/view/go/<distance>')
+@app.route('/robot/go/<distance>')
 def view(distance=None):
 	return render_template('robot.html', distance=distance)
    
@@ -18,4 +18,4 @@ def view(distance=None):
 
 
 if __name__ == '__main__':
-    app.run(debug = true)
+    app.run(debug=True)
