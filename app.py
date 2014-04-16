@@ -9,11 +9,14 @@ def index ():
     #return "Hello " + name
     return render_template('home.html', name=name)
 
-@app.route('/robot')
 @app.route('/robot/go/<distance>')
 def view(distance=None):
 	return render_template('robot.html', distance=distance)
    
+
+@app.route('/robot/square/<distance>')
+def view(distance=None):
+    return render_template('robotgo.html', distance=distance)
 
 
 
