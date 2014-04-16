@@ -10,12 +10,12 @@ def index ():
 
 @app.route('/robot/go/<distance>')
 def go(distance=None):
-	return render_template('robot.html', distance=distance)
+	return render_template('robotgo.html', distance=distance)
    
 
 @app.route('/robot/square/<distance>')
 def square(distance=None):
-    return render_template('robotgo.html', distance=distance)
+    return render_template('robotsquare.html', distance=distance)
 
 
 
