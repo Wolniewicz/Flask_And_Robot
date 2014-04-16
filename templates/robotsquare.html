@@ -6,12 +6,15 @@
 <body>
 
 	
-{{ distance }}
 
-main:
-forward A ; go forwards
-forward B
-goto main
+
+    Main:
+    forward A
+    forward B
+    pause {{ distance*100 }}
+    halt A
+    pause 600
+    Goto Main
 
 
 </body>
