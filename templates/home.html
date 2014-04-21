@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
-<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script></head>
-<style type="text/css">
-</head>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script></head>
+	<style type="text/css">
+	</head>
 
-</style>
-<body>
-
-How far would you like your robot to go forward?
-
-<form action="demo_form.asp">
-Go: <input type="text" name="distance" value="0"> ft<br><br>
-<input type="submit" value="Submit">
-</form>
-<br><br>
+	</style>
+	<body>
 
 
 
-what do you want the area of your square to be?
-<form action="demo_form.asp">
-Go: <input type="text" name="square" value="0"> ft<br><br>
-<input type="submit" value="Submit">
-</form>
-<br><br>
+	How far would you like your robot to go forward?
+
+	<form action="demo_form.asp">
+	Go: <input id="gobox" type="text" name="distance" value="0"> ft<br><br>
+	</form>
+	<br><br>
+	<button id="forward">Forward Code</button>
+	<script>
+
+	$('#forward').click(function(){
+		var baseurl = '/robot/go/';
+		var url = baseurl + $('input#gobox').val();
+		window.location.href=url;
+		})
+
+	</script>
+
+	</br>
+	</br>
 
 
-</body>
-</html>
+
+	What do you want the area of your square to be?
+	<form action="demo_form.asp">
+	Go: <input id="squarebox" type="text" name="square" value="0"> ft<br><br>
+	</form>
+	<br><br>
+
+
+	<button id="square">square Code</button>
+<script>
+
+	$('#square').click(function(){
+		var baseurl = '/robot/square/';
+		var url = baseurl + $('input#squarebox').val();
+		window.location.href=url;
+		})
+
+	</script>
+	</body>
+	</html>
