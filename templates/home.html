@@ -10,8 +10,13 @@
 
 	</style>
 	<body>
+	<div class="row">
 
-<h2>Welcome to our archive of Microbot programs!</h2>
+		<div class="col-md-2 left"></div>
+
+		<div class="col-xs-6 col-md-8 content">
+
+	<h2>Welcome to our archive of Microbot programs!</h2>
 
 	<p>Here is some code to make your robot go forward a distance, input how far you'd like it to go.</p>
 
@@ -32,6 +37,8 @@
 
 	</br>
 	</br>
+	</br>
+	</br>
 
 
 
@@ -43,7 +50,7 @@
 
 
 	<button id="square">square Code</button>
-<script>
+	<script>
 
 	$('#square').click(function(){
 		var baseurl = '/robot/square/';
@@ -56,13 +63,15 @@
 
 	</br>
 	</br>
+	</br>
+	</br>
 
 	<p>This code makes your robot play a bad sounding hot cross buns. It doesn't take an input.</p>
 	<br>
 
 
 	<button id="buns">Hot X Buns Code</button>
-<script>
+	<script>
 
 	$('#buns').click(function(){
 		var baseurl = '/robot/buns/0';
@@ -75,6 +84,8 @@
 
 	</br>
 	</br>
+	</br>
+	</br>
 
 	<p>Here is code to make your robot go in a hexagon! Input how big you'd like the hexagon to be.</p>
 	<form action="demo_form.asp">
@@ -84,7 +95,7 @@
 
 
 	<button id="hexagon">Hexagon Code</button>
-<script>
+	<script>
 
 	$('#hexagon').click(function(){
 		var baseurl = '/robot/hexagon/';
@@ -94,5 +105,34 @@
 
 	</script>
 
+
+
+	</br>
+	</br>
+	</br>
+	</br>
+
+	<p>Here is code to make your roam about, and when it bumps into something, shake and make some noise. Then it resumes roaming.</p>
+	<form action="demo_form.asp">
+	Go: <input id="search" type="text" name="square" value="0"> ft<br><br>
+	</form>
+	<br>
+
+
+	<button id="searchy">Roaming Code</button>
+	<script>
+
+	$('#searchy').click(function(){
+		var baseurl = '/robot/search/';
+		var url = baseurl + $('input#search').val();
+		window.location.href=url;
+		})
+
+	</script>
+	</div>
+
+	<div class="col-md-2 right">
+	</div>
+	</div>
 	</body>
 	</html>
