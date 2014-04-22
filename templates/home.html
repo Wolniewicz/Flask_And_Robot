@@ -75,5 +75,27 @@
 
 	</script>
 
+
+	</br>
+	</br>
+
+		Hexagon code!
+	<form action="demo_form.asp">
+	Go: <input id="hexbox" type="text" name="square" value="0"> ft<br><br>
+	</form>
+	<br><br>
+
+
+	<button id="hexagon">Hexagon Code</button>
+<script>
+
+	$('#hexagon').click(function(){
+		var baseurl = '/robot/hexagon/';
+		var url = baseurl + $('input#hexbox').val();
+		window.location.href=url;
+		})
+
+	</script>
+
 	</body>
 	</html>

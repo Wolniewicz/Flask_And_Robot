@@ -23,5 +23,10 @@ def xbuns(distance=None):
     return render_template('robotxbuns.html', distance=distance)
 
 
+@app.route('/robot/hexagon/<distance>')
+def hexagon(distance=None):
+    return render_template('robothexagon.html', distance=distance)
+
+
 if __name__ == '__main__':
     app.run(debug=True)
