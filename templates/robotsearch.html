@@ -8,13 +8,64 @@
 	
 
 
+Init:</br>
+Symbol Right = pinC.3</br>
+Symbol Left = pinC.1</br>
+Symbol I = 1</br>
 main:</br>
-forward A</br>
+forward A </br>
 forward B</br>
-pause {{ distance + "000" }}</br>
-backward A</br>
-pause 195</br>
+If Right = 1 then goto doLeft</br>
+If Left = 1 then goto doRight</br>
 goto main</br>
+end</br>
+doLeft:</br>
+backward A</br>
+backward B</br>
+pause 200</br>
+Halt A</br>
+Halt B</br>
+	forward B</br>
+	pause 100</br>
+	backward B </br>
+	forward A</br>
+	Pause 100</br>
+	forward B</br>
+	pause 100</br>
+	backward B </br>
+	forward A</br>
+	Pause 100</br>
+	goSub Noise </br>
+backward B</br>
+forward A</br>
+pause 300</br>
+goto main</br>
+doRight:</br>
+backward A</br>
+backward B</br>
+pause 200</br>
+Halt A </br>
+Halt B</br>
+	forward B</br>
+	pause 100</br>
+	backward B </br>
+	forward A</br>
+	Pause 100</br>
+	forward B</br>
+	pause 100</br>
+	backward B </br>
+	forward A</br>
+	Pause 100</br>
+	goSub Noise</br>
+backward A</br>
+forward B</br>
+pause 300</br>
+goto main</br>
+	</br>
+Noise:</br>
+'smbdeath</br>
+tune 2, 9,($40,$40,$40,$7C,$7B,$45,$7C,$45,$45,$44,$42,$40,$7C,$74,$7C,$70)</br>
+return</br>
 
 
 
