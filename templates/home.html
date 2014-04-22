@@ -11,14 +11,14 @@
 	</style>
 	<body>
 
+<h2>Welcome to our archive of Microbot programs!</h2>
 
-
-	How far would you like your robot to go forward?
+	<p>Here is some code to make your robot go forward a distance, input how far you'd like it to go.</p>
 
 	<form action="demo_form.asp">
 	Go: <input id="gobox" type="text" name="distance" value="0"> ft<br><br>
 	</form>
-	<br><br>
+	<br>
 	<button id="forward">Forward Code</button>
 	<script>
 
@@ -35,11 +35,11 @@
 
 
 
-	What do you want the area of your square to be?
+	<p>Here is some code to make your robot go in a square, input how big you'd like the square to be.</p>
 	<form action="demo_form.asp">
 	Go: <input id="squarebox" type="text" name="square" value="0"> ft<br><br>
 	</form>
-	<br><br>
+	<br>
 
 
 	<button id="square">square Code</button>
@@ -57,19 +57,16 @@
 	</br>
 	</br>
 
-		Hotcross buns code!
-	<form action="demo_form.asp">
-	Go: <input id="bunbox" type="text" name="square" value="0"> ft<br><br>
-	</form>
-	<br><br>
+	<p>This code makes your robot play a bad sounding hot cross buns. It doesn't take an input.</p>
+	<br>
 
 
 	<button id="buns">Hot X Buns Code</button>
 <script>
 
 	$('#buns').click(function(){
-		var baseurl = '/robot/buns/';
-		var url = baseurl + $('input#bunbox').val();
+		var baseurl = '/robot/buns/0';
+		var url = baseurl;
 		window.location.href=url;
 		})
 
@@ -79,11 +76,11 @@
 	</br>
 	</br>
 
-		Hexagon code!
+	<p>Here is code to make your robot go in a hexagon! Input how big you'd like the hexagon to be.</p>
 	<form action="demo_form.asp">
 	Go: <input id="hexbox" type="text" name="square" value="0"> ft<br><br>
 	</form>
-	<br><br>
+	<br>
 
 
 	<button id="hexagon">Hexagon Code</button>
