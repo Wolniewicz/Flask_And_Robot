@@ -52,5 +52,28 @@
 		})
 
 	</script>
+
+
+	</br>
+	</br>
+
+		Hotcross buns code!
+	<form action="demo_form.asp">
+	Go: <input id="bunbox" type="text" name="square" value="0"> ft<br><br>
+	</form>
+	<br><br>
+
+
+	<button id="buns">Hot X Buns Code</button>
+<script>
+
+	$('#buns').click(function(){
+		var baseurl = '/robot/buns/';
+		var url = baseurl + $('input#bunbox').val();
+		window.location.href=url;
+		})
+
+	</script>
+
 	</body>
 	</html>

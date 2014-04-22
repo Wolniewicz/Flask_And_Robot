@@ -18,6 +18,10 @@ def square(distance=None):
     return render_template('robotsquare.html', distance=distance)
 
 
+@app.route('/robot/buns/<distance>')
+def xbuns(distance=None):
+    return render_template('robotxbuns.html', distance=distance)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
