@@ -8,6 +8,21 @@ def index ():
     #return "Hello " + name
     return render_template('home.html')
 
+@app.route('/view/go', methods=['POST', 'GET'])
+def viewgo ():
+    #return "Hello " + name
+    return render_template('viewgo.html')
+
+@app.route('/view/square', methods=['POST', 'GET'])
+def viewsquare ():
+    #return "Hello " + name
+    return render_template('viewsquare.html')
+
+@app.route('/view/hex', methods=['POST', 'GET'])
+def viewhex ():
+    #return "Hello " + name
+    return render_template('viewhex.html')
+
 @app.route('/robot/go/<distance>')
 def go(distance=None):
 	return render_template('robotgo.html', distance=distance)

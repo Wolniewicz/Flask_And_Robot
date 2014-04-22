@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script></head>
+	<style type="text/css">
+	</head>
+
+	</style>
+	<body>
+	<div class="row">
+
+		<div class="col-md-2 left"></div>
+
+		<div class="col-xs-6 col-md-8 content">
+		
+	<p>Here is code to make your robot go in a hexagon! Input how big you'd like the hexagon to be.</p>
+	<form action="demo_form.asp">
+	Go: <input id="hexbox" type="text" name="square" value="0"> ft<br><br>
+	</form>
+	<br>
+
+
+	<button id="hexagon">Hexagon Code</button>
+	<script>
+
+	$('#hexagon').click(function(){
+		var baseurl = '/robot/hexagon/';
+		var url = baseurl + $('input#hexbox').val();
+		window.location.href=url;
+		})
+
+	</script>
+
+	</div>
+
+	<div class="col-md-2 right">
+	</div>
+	</div>
+	</body>
+	</html>

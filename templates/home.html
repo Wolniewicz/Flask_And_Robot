@@ -18,18 +18,14 @@
 
 	<h2>Welcome to our archive of Microbot programs!</h2>
 
-	<p>Here is some code to make your robot go forward a distance, input how far you'd like it to go.</p>
-
-	<form action="demo_form.asp">
-	Go: <input id="gobox" type="text" name="distance" value="0"> ft<br><br>
-	</form>
+	<p>Simple code to make your microbot go forward!</p>
 	<br>
 	<button id="forward">Forward Code</button>
 	<script>
 
 	$('#forward').click(function(){
-		var baseurl = '/robot/go/';
-		var url = baseurl + $('input#gobox').val();
+		var baseurl = '/view/go';
+		var url = baseurl;
 		window.location.href=url;
 		})
 
@@ -42,10 +38,7 @@
 
 
 
-	<p>Here is some code to make your robot go in a square, input how big you'd like the square to be.</p>
-	<form action="demo_form.asp">
-	Go: <input id="squarebox" type="text" name="square" value="0"> ft<br><br>
-	</form>
+	<p>Cod that makes your robot go in a square!</p>
 	<br>
 
 
@@ -53,8 +46,8 @@
 	<script>
 
 	$('#square').click(function(){
-		var baseurl = '/robot/square/';
-		var url = baseurl + $('input#squarebox').val();
+		var baseurl = '/view/square';
+		var url = baseurl;
 		window.location.href=url;
 		})
 
@@ -66,7 +59,7 @@
 	</br>
 	</br>
 
-	<p>This code makes your robot play a bad sounding hot cross buns. It doesn't take an input.</p>
+	<p>This code makes your robot play a bad sounding hot cross buns.</p>
 	<br>
 
 
@@ -87,10 +80,7 @@
 	</br>
 	</br>
 
-	<p>Here is code to make your robot go in a hexagon! Input how big you'd like the hexagon to be.</p>
-	<form action="demo_form.asp">
-	Go: <input id="hexbox" type="text" name="square" value="0"> ft<br><br>
-	</form>
+	<p>Code to make your robot go in a hexagon!</p>
 	<br>
 
 
@@ -98,8 +88,8 @@
 	<script>
 
 	$('#hexagon').click(function(){
-		var baseurl = '/robot/hexagon/';
-		var url = baseurl + $('input#hexbox').val();
+		var baseurl = '/view/hex';
+		var url = baseurl;
 		window.location.href=url;
 		})
 
@@ -113,9 +103,6 @@
 	</br>
 
 	<p>Here is code to make your roam about, and when it bumps into something, shake and make some noise. Then it resumes roaming.</p>
-	<form action="demo_form.asp">
-	Go: <input id="search" type="text" name="square" value="0"> ft<br><br>
-	</form>
 	<br>
 
 
@@ -123,8 +110,8 @@
 	<script>
 
 	$('#searchy').click(function(){
-		var baseurl = '/robot/search/';
-		var url = baseurl + $('input#search').val();
+		var baseurl = '/robot/search/0';
+		var url = baseurl;
 		window.location.href=url;
 		})
 
